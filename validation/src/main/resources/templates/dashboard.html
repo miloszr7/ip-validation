@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<title>IP Validation</title>
+	<link rel="stylesheet" type="text/css" href="dashboard.css">
+	<script src="https://use.fontawesome.com/615c6d64ea.js"></script>
+    <link href="../static/css/dashboard.css" th:href="@{/css/dashboard.css}" rel="stylesheet" />
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <h1>IP Validation</h1>
+</div>
+
+<div class="top-search">
+    
+    <form action="#" th:action="@{/validate}" th:object="${address}" method="post">
+
+        <input type="text" th:field="*{ip}"
+               class="input" placeholder="IP Address">
+        <br />
+        <input type="submit" value="Validate" class="submit">
+    </form>
+
+</div>
+
+<div class="output">
+	
+	<span class="validate" th:text="${result}">...</span>
+
+</div>
+
+</body>
+</html>

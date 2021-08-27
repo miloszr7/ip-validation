@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+body {
+  margin: 0;
+  background-color: #1A1A1A;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  margin-left: 20px;
+}
+
+.header {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+}
+
+table {
+  margin-top: 5%;
+}
+
+td {
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border-left: 4px solid #00FFF3;
+  height: 70px;
+  padding: 10px;
+  width: 400px;
+  background-color: rgba(35, 39, 42, 0.5);
+}
+
+td:hover {
+  cursor: pointer;
+  background-color: rgba(35, 39, 42, 0.1);
+}
+
+a {
+  text-decoration: none;
+}
+
+.input, .submit {
+  color: whitesmoke;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.input {
+  margin-top: 5%;
+  width: 450px;
+  border-bottom: 2px solid cyan;
+}
+
+.submit {
+  border-radius: 10px;
+  margin-top: 2%;
+  width: 250px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: cyan;
+}
+
+.content {
+  width: 50%;
+  float: left;
+}
+
+.validate {
+  color: red;
+}
+
+.output {
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+.top-search, .output {
+  width: 100%;
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
